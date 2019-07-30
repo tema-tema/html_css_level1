@@ -1,0 +1,168 @@
+body {
+  min-width: 960px;
+  padding: 0;
+  margin: 0;
+  font: 700 14px/24px "PT Sans Narrow", Arial, sans-serif;
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:not([href]) {
+  cursor: default;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font: inherit;
+  text-transform: inherit;
+}
+
+button,
+input {
+  box-sizing: border-box;
+}
+
+button,
+label {
+  cursor: pointer;
+}
+
+
+.visually-hidden {
+	position: absolute;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+  width: 1px;
+	height: 1px;
+  padding: 0;
+	margin: -1px;
+	border: 0;
+}
+
+
+.container {
+  width: 940px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+
+
+
+/* ===== page-header ===== */
+
+
+.page-header {
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+}
+
+.nav-bar {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+
+.logo-link {
+  margin: 24px 20px;
+}
+
+.inner-logo {
+  display: block;
+  width: 111px;
+  height: 24px;
+}
+.inner-logo:active {
+  opacity: 0.3;
+}
+
+
+.main-nav,
+.user-menu {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  line-height: 20px;
+  list-style: none;
+}
+
+.main-nav {
+  max-width: 620px;
+}
+
+.user-menu {
+  justify-content: flex-end;
+  max-width: 220px;
+  margin-left: auto;
+}
+
+
+.main-nav-link,
+.user-menu-link {
+  position: relative;
+  display: block;
+  padding: 26px 20px;
+  color: rgb(255, 255, 255);
+}
+.main-nav-link[href]:hover,
+.user-menu-link[href]:hover {
+  background-color: rgb(36, 36, 36);
+}
+.main-nav-link[href]:active,
+.user-menu-link[href]:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+
+.current-page-link:after {
+  content: "";
+  position: absolute;
+  right: 20px;
+  bottom: 0;
+  left: 20px;
+  height: 4px;
+  background-color: rgb(255, 255, 255);
+}
+
+
+.login-btn {
+  padding-left: 56px;
+}
+.login-btn::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  width: 16px;
+  height: 16px;
+  background: url("../img/login-btn-icon.svg") 0% 0% no-repeat;
+  transform: translateY(-50%);
+  opacity: 0.3;
+}
+.login-btn:hover::before {
+  opacity: 1;
+}
+.login-btn:active::before {
+  opacity: 0.3;
+}
+.login-btn:after {
+	left: 56px;
+}
